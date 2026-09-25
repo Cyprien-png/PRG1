@@ -39,6 +39,7 @@ int main () {
     float timeToTravel1 = L1 / s1;
     float timeToTravel2 = L2 / s2;
     float totalTime = timeToTravel1 + timeToTravel2;
+    float minutes = round((totalTime - floor(totalTime)) * 60);
 
-    cout << "WALL-E's about to take " << totalTime << " hours to reach the object on a " << L1 + L2 << "km long way"<< endl;
+    cout << "WALL-E's about to take about " << int(totalTime) << " hours and " << minutes << " minutes to reach the object on a " << L1 + L2 << "km long way"<< endl;
 }

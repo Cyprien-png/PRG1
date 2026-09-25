@@ -12,5 +12,6 @@
    - $d1 = \frac{l1}{s1}$
    - $d2 = \frac{l2}{s2}$
    - $total_{hours} = d1 + d2$
+   - Then compute the minutes
 3. See ya !
    - Prompt the result
