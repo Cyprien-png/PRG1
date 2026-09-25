@@ -24,7 +24,8 @@ int main () {
 
     string wannaDefine = "Y";
     cout << "Would you like to defin the length of the road ? (Y/n)" << endl;
-    cin >> wannaDefine;
+    getline(cin, wannaDefine);
+
 
     if (wannaDefine != "n" && wannaDefine != "N") {
         cout << "Then how long is that road ? (km)" << endl;
