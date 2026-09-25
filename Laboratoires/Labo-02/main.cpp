@@ -22,6 +22,16 @@ int main () {
     cout << "The length of the dirt path has to be calculated" << endl;
     cout << separator << endl;
 
+    string wannaDefine = "Y";
+    cout << "Would you like to defin the length of the road ? (Y/n)" << endl;
+    cin >> wannaDefine;
+
+    if (wannaDefine != "n" && wannaDefine != "N") {
+        cout << "Then how long is that road ? (km)" << endl;
+        cin >> L1;
+        cout << separator << endl;
+    }
+
     // calculate the hypotenuse of the dirt path (L2)
     float L2 = (sqrt(pow((dy - L1), 2) + pow(dx, 2)));
 
